@@ -1,6 +1,6 @@
 package com.zhangziqi;
 
-import com.zhangziqi.Enum.StringProcessEnum;
+import com.zhangziqi.enums.StringProcessEnum;
 import com.zhangziqi.processor.AbstractStringProcessor;
 import com.zhangziqi.processor.ConsecutiveCharProcessor;
 import com.zhangziqi.processor.RemovalStrategy;

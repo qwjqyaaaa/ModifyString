@@ -4,7 +4,7 @@ package com.zhangziqi;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-import com.zhangziqi.Enum.StringProcessEnum;
+import com.zhangziqi.enums.StringProcessEnum;
 
 /**
  * This class contains unit tests for the Main class.
