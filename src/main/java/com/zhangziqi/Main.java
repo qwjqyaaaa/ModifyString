@@ -27,7 +27,7 @@ public class Main {
             System.out.println("First arguments error,please check the arguments.");
             return;
         }
-        if (args[1] != null && !isAllEnglishLetters(args[1])) {
+        if (args[1] != null && !isAllLowercaseLetters(args[1])) {
             System.out.println("Second arguments error,please check the arguments.");
             return;
         }
@@ -53,19 +53,10 @@ public class Main {
      * Checks if the given string contains only English letters.
      *
      * @param str The string to check.
-     * @return true if the string contains only English letters, false otherwise.
+     * @return true if the string contains only lowercase English letters, false otherwise.
      */
-    public static boolean isAllEnglishLetters(String str) {
-        if (str == null || str.isEmpty()) {
-            return false;
-        }
-
-        for (int i = 0; i < str.length(); i++) {
-            if (!Character.isLetter(str.charAt(i))) {
-                return false;
-            }
-        }
-        return true;
+    public static boolean isAllLowercaseLetters(String str) {
+        return str != null && !str.isEmpty() && str.matches("^[a-z]+$");
     }
 
 }
